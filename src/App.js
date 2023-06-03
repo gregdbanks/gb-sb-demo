@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import styled from 'styled-components';
+import FunButton from './FunButton';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #F2F2F2;
+`;
+
+const App = () => (
+  <ButtonContainer>
+    <FunButton size="small" variation="outline" theme="dark">Button 1</FunButton>
+    <FunButton size="medium" variation="default" theme="colorful">Button 2</FunButton>
+    <FunButton size="large" variation="ghost" theme="light">Button 3</FunButton>
+  </ButtonContainer>
+);
 
 export default App;
