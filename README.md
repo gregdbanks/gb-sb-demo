@@ -6,11 +6,12 @@ To install:
 npx sb init
 ```
 
-You'll want to create a new file in the stories directory. Let's call it FunButton.stories.js. The code might look something like this:
+First delete the whole stories dirctory, then you'll want to create a new file in the stories directory.
+Let's call it FunButton.stories.js. The code might look something like this:
 
 ```js
 import React from "react";
-import FunButton from "../FunButton";
+import FunButton from "./FunButton";
 
 // This default export determines where your story goes in the story list
 // The title corresponds to the path you'll see in the Storybook UI (eg: "FunButton")

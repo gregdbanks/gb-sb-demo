@@ -6,7 +6,7 @@ const ButtonVariations = {
   default: css`
     background-color: ${(props) =>
       props.theme === "light"
-        ? "#ffffff"
+        ? "lightGrey"
         : props.theme === "dark"
         ? "#000000"
         : "#ff007f"};
@@ -37,7 +37,7 @@ const ButtonVariations = {
           ? "#ffffff"
           : "#ff007f"};
     &:hover {
-      opacity: 0.8;
+      background: lightGrey;
     }
   `,
   ghost: css`
@@ -46,7 +46,7 @@ const ButtonVariations = {
       props.theme === "light"
         ? "#000000"
         : props.theme === "dark"
-        ? "#ffffff"
+        ? "#000000"
         : "#ffffff"};
     border: 2px solid
       ${(props) =>
@@ -60,13 +60,14 @@ const ButtonVariations = {
         props.theme === "light"
           ? "#000000"
           : props.theme === "dark"
-          ? "#ffffff"
+          ? "#000000"
           : "#ff007f"};
+      border-radius: 8px;
       color: ${(props) =>
         props.theme === "light"
           ? "#ffffff"
           : props.theme === "dark"
-          ? "#000000"
+          ? "#ffffff"
           : "#000000"};
     }
   `,
