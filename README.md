@@ -14,7 +14,7 @@ So many requirement, like
 
 # Quick Facts:
 
-- Airbnb, IBM, and dropbox use it
+- Airbnb, IBM, and Dropbox use it
 - Compatible with React, Vue, and Angular
 - Usage: 500,000 devs
 - 60,000 stars on github
