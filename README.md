@@ -1,6 +1,6 @@
 # What is Storybook?
 
-A component testing tool that allows you to build, and test components in isolation. It can serve and be structured based on a design system if one exist
+Storybook is a frontend workshop for building UI components and pages in isolation. Thousands of teams use it for UI development, testing, and documentation. It’s open source and free
 
 # Why Storybook?
 
@@ -105,6 +105,8 @@ export default {
 
 - [Visual Testing](https://storybook.js.org/docs/react/writing-tests/visual-testing)
 - [Test Coverage](https://storybook.js.org/docs/react/writing-tests/test-coverage)
+- [Snapshot tests](https://storybook.js.org/docs/react/writing-tests/snapshot-testing)
+- [Integrations with Jest, RTL, and Cypress](https://storybook.js.org/docs/react/writing-tests/snapshot-testing)
 
 ## Useful Links:
 
