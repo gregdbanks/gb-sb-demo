@@ -1,3 +1,36 @@
+# What is Storybook?
+
+A component testing tool that allows you to build, and test components in isolation. It can serve and be structured based on a design system if one exist
+
+# Why Storybook?
+
+So many requirement, like
+
+- Responsiveness
+- Browsers
+- Accessibility
+- Performance
+- All variations needed to fit all use cases and a place to organize
+
+# Quick Facts:
+
+- Airbnb, IBM, and dropbox use it
+- Compatible with React, Vue, and Angular
+- Usage: 500,000 devs
+- 60,000 stars on github
+- Integrates with Jest, React Testing Lib, And Cypress
+- 1.3 Million weekly downloads, compared to 200,000 for playwright, and 50,000 for bit
+
+# The main competitors to Storybook include:
+
+1. Styleguidist: This tool emphasizes showcasing components with their respective code examples and props. However, it doesn't offer the same level of interactivity and isolated development environment as Storybook.
+2. Playroom: Playroom allows you to simultaneously design across a variety of themes and screen sizes, with the code generated in real-time. Still, it lacks the robustness and feature-rich environment that Storybook provides.
+3. Bit: Bit emphasizes component sharing and collaboration. It's useful if you have many shared components across multiple projects. However, it does not provide the same level of documentation or testing utilities that Storybook offers.
+
+# NPM trends
+
+<img src='./numbers.png' />
+
 # Getting Started with StoryBook
 
 To install:
@@ -56,57 +89,26 @@ LargeGhost.args = {
 };
 ```
 
-To add on Documentation for your component run,
+To add on Documentation for your component just add this,
 
 ```js
-npm install --save-dev @storybook/addon-docs
-```
-
-update your storybook main.js,
-
-```js
-module.exports = {
-  stories: ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
-  addons: [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials",
-    "@storybook/preset-create-react-app",
-  ],
-  framework: {
-    name: "@storybook/react-webpack5",
-    options: {},
-  },
-  docs: {
-    autodocs: true,
-  },
-};
-```
-
-Update your FunButton.stories.js to include a parameters section in your default export. This section will include the documentation for your component. You write this in markdown:
-
-```js
-import React from "react";
-import FunButton from "../FunButton";
-
 export default {
   title: "FunButton",
   component: FunButton,
-  parameters: {
-    docs: {
-      description: {
-        component: `
-          This is a fun button component. 
-
-          It has several properties:
-          
-          - **size:** Determines the size of the button. Can be 'small', 'medium', or 'large'.
-          - **variation:** Determines the variation of the button. Can be 'default', 'outline', or 'ghost'.
-          - **theme:** Determines the theme of the button. Can be 'light', 'dark', or 'colorful'.
-        `,
-      },
-    },
-  },
+  tags: ["autodocs"], // <-- Add this line here>
 };
-
-// ... rest of the file ...
 ```
+
+<!-- // bug below is not needed update to use autoDocs: tag -->
+
+# Things not covered but may want to look further into:
+
+- [Visual Testing](https://storybook.js.org/docs/react/writing-tests/visual-testing)
+- [Test Coverage](https://storybook.js.org/docs/react/writing-tests/test-coverage)
+
+## Useful Links:
+
+- [Storybook Official Docs](https://storybook.js.org/)
+- [Essential Addons](https://storybook.js.org/docs/react/essentials/introduction)
+
+<!-- // bug mention chatGPT strengths and weaknesses -->
