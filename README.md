@@ -6,11 +6,13 @@ Storybook is a frontend workshop for building UI components and pages in isolati
 
 So many requirement, like
 
-- Responsiveness
-- Browsers
+- Million different devices and screen sizes, so responsiveness
+- Multiple Browsers
 - Accessibility
 - Performance
 - All variations needed to fit all use cases and a place to organize
+
+All these requirements can be tough to manage and handle, thats why storybook was created.
 
 # Quick Facts:
 
