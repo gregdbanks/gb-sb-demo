@@ -33,7 +33,9 @@ So many requirement, like
 
 # Getting Started with StoryBook
 
-To install:
+_Im using Node v16.19.1_
+
+To initialize:
 
 ```js
 npx sb init
@@ -99,7 +101,17 @@ export default {
 };
 ```
 
-<!-- // bug below is not needed update to use autoDocs: tag -->
+Now lets add on accessibility testing by installing and adding to your main.js
+
+```sh
+npm i @storybook/addon-a11y
+```
+
+```js
+export default {
+  addons: ["@storybook/addon-a11y"],
+};
+```
 
 # Things not covered but may want to look further into:
 
